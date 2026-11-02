@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https://www.google.com; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Contact Us | Pinetown Shelter and Westville Drop-off</title>
+  <meta name="description" content="Find the Durban Paws Rescue shelter in Pinetown and our drop-off point in Westville. See opening hours, a map, and send us a message.">
+  <meta name="theme-color" content="#1b6b73">
+  <link rel="canonical" href="https://gift031.github.io/durban-paws-rescue/contact.html">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph and Twitter cards control how a shared link looks -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Durban Paws Rescue">
+  <meta property="og:locale" content="en_ZA">
+  <meta property="og:title" content="Contact Us | Pinetown Shelter and Westville Drop-off">
+  <meta property="og:description" content="Find the Durban Paws Rescue shelter in Pinetown and our drop-off point in Westville. See opening hours, a map, and send us a message.">
+  <meta property="og:url" content="https://gift031.github.io/durban-paws-rescue/contact.html">
+  <meta property="og:image" content="https://gift031.github.io/durban-paws-rescue/images/service-adoption.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;family=Poppins:wght@600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header>
+    <div class="logo">
+      <a href="index.html">Durban Paws Rescue</a>
+    </div>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="enquiry.html">Enquire</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <h1>Contact Us</h1>
+
+    <!-- Two locations, each with its own Google Maps embed -->
+    <section class="locations" aria-label="Our locations">
+
+      <article class="location">
+        <h2>Main Shelter, Pinetown</h2>
+        <p>12 Wattle Road, Pinetown, Durban, 3610</p>
+        <p>Tel: <a href="tel:+27315550182">031&nbsp;555&nbsp;0182</a></p>
+        <p>Open Monday to Saturday, 09:00 to 16:00</p>
+        <iframe
+          title="Map showing Durban Paws Rescue main shelter in Pinetown"
+          src="https://www.google.com/maps?q=Pinetown,Durban&amp;output=embed"
+          height="300" style="border:0;" loading="lazy">
+        </iframe>
+      </article>
+
+      <article class="location">
+        <h2>Drop-off Point, Westville</h2>
+        <p>4 Jan Hofmeyr Road, Westville, Durban, 3629</p>
+        <p>Tel: <a href="tel:+27315550197">031&nbsp;555&nbsp;0197</a></p>
+        <p>Open Tuesday to Friday, 10:00 to 14:00</p>
+        <iframe
+          title="Map showing Durban Paws Rescue drop-off point in Westville"
+          src="https://www.google.com/maps?q=Westville,Durban&amp;output=embed"
+          height="300" style="border:0;" loading="lazy">
+        </iframe>
+      </article>
+
+    </section>
+
+    <!-- General contact form: builds an email for the visitor to send -->
+    <section class="contact-form" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Send Us a Message</h2>
+
+      <form action="#" method="post" id="contact-form" aria-describedby="contact-note">
+        <p class="form-note" id="contact-note"><span aria-hidden="true">*</span> Required fields. We build an email from your answers for you to check and send from your own email app.</p>
+
+        <div class="form-field">
+          <label for="c-full-name">Full Name <span aria-hidden="true">*</span></label>
+          <input type="text" id="c-full-name" name="full-name" autocomplete="name" minlength="2" maxlength="60" required data-rule="name" aria-describedby="c-full-name-error">
+          <span class="field-error" id="c-full-name-error"></span>
+        </div>
+
+        <div class="form-field">
+          <label for="c-email">Email Address <span aria-hidden="true">*</span></label>
+          <input type="email" id="c-email" name="email" autocomplete="email" maxlength="254" required data-rule="email" aria-describedby="c-email-error">
+          <span class="field-error" id="c-email-error"></span>
+        </div>
+
+        <div class="form-field">
+          <label for="c-phone">Phone Number <span class="optional">(optional)</span></label>
+          <input type="tel" id="c-phone" name="phone" autocomplete="tel" inputmode="tel" pattern="[0-9+\(\)\s\-]{9,17}" title="A South African number, for example 031 555 0182" data-rule="phone" aria-describedby="c-phone-hint c-phone-error">
+          <span class="field-hint" id="c-phone-hint">A South African number, for example 031 555 0182.</span>
+          <span class="field-error" id="c-phone-error"></span>
+        </div>
+
+        <div class="form-field">
+          <label for="c-topic">Type of message <span aria-hidden="true">*</span></label>
+          <select id="c-topic" name="topic" required data-rule="select" data-error="Choose the type of message." aria-describedby="c-topic-error">
+            <option value="">Please select an option</option>
+            <option value="general">General question</option>
+            <option value="feedback">Feedback</option>
+            <option value="stray">Report a stray or injured animal</option>
+            <option value="media">Media request</option>
+            <option value="donation">Donation question</option>
+          </select>
+          <span class="field-error" id="c-topic-error"></span>
+        </div>
+
+        <div class="form-field">
+          <label for="c-subject">Subject <span aria-hidden="true">*</span></label>
+          <input type="text" id="c-subject" name="subject" minlength="3" maxlength="100" required data-rule="subject" aria-describedby="c-subject-error">
+          <span class="field-error" id="c-subject-error"></span>
+        </div>
+
+        <div class="form-field">
+          <label for="c-message">Message <span aria-hidden="true">*</span></label>
+          <textarea id="c-message" name="message" rows="5" minlength="10" maxlength="1000" required data-rule="message" aria-describedby="c-message-count c-message-error"></textarea>
+          <span class="char-count" id="c-message-count" aria-hidden="true"></span>
+          <span class="field-error" id="c-message-error"></span>
+        </div>
+
+        <button type="submit">Build my email</button>
+        <p class="form-status" id="contact-status" role="status" aria-live="polite"></p>
+      </form>
+
+      <!-- Email preview shown after a valid submission (filled in by js/forms.js) -->
+      <div class="email-preview" id="email-preview" hidden>
+        <h3 tabindex="-1">Check your email</h3>
+        <dl class="response-list">
+          <div><dt>To</dt><dd id="preview-to"></dd></div>
+          <div><dt>Subject</dt><dd id="preview-subject"></dd></div>
+        </dl>
+        <pre id="preview-body"></pre>
+        <div class="response-actions">
+          <a class="cta-button" id="send-email" href="#">Open in my email app</a>
+          <button type="button" id="copy-email" class="button-secondary">Copy email text</button>
+          <button type="button" id="edit-message" class="button-secondary">Edit my message</button>
+        </div>
+        <p id="copy-status" role="status" aria-live="polite"></p>
+        <p class="form-note">If your email app does not open, copy the text and paste it into a new email to the address above.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <p class="footer-title">Durban Paws Rescue</p>
+        <p>12 Wattle Road, Pinetown, Durban, 3610</p>
+        <p>Tel: <a href="tel:+27315550182">031&nbsp;555&nbsp;0182</a></p>
+      </div>
+      <div>
+        <p class="footer-title">Explore</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="enquiry.html">Enquire</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-title">Share this page</p>
+        <ul class="footer-links">
+          <li><a data-share="whatsapp" href="https://wa.me/?text=https%3A%2F%2Fgift031.github.io%2Fdurban-paws-rescue%2F" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+          <li><a data-share="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgift031.github.io%2Fdurban-paws-rescue%2F" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          <li><a data-share="email" href="mailto:?subject=Durban%20Paws%20Rescue">Email</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-legal">&copy; 2026 Durban Paws Rescue. All rights reserved.</p>
+  </footer>
+
+  <script src="js/config.js" defer></script>
+  <script src="js/forms.js" defer></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>

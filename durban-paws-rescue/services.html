@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https://www.google.com; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Adopt, Foster or Sponsor a Pet | Durban Paws Rescue Services</title>
+  <meta name="description" content="See adoption fees, foster support and sterilisation drive dates, then search our services by cost and availability.">
+  <meta name="theme-color" content="#1b6b73">
+  <link rel="canonical" href="https://gift031.github.io/durban-paws-rescue/services.html">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph and Twitter cards control how a shared link looks -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Durban Paws Rescue">
+  <meta property="og:locale" content="en_ZA">
+  <meta property="og:title" content="Adopt, Foster or Sponsor a Pet | Durban Paws Rescue Services">
+  <meta property="og:description" content="See adoption fees, foster support and sterilisation drive dates, then search our services by cost and availability.">
+  <meta property="og:url" content="https://gift031.github.io/durban-paws-rescue/services.html">
+  <meta property="og:image" content="https://gift031.github.io/durban-paws-rescue/images/service-adoption.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;family=Poppins:wght@600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header>
+    <div class="logo">
+      <a href="index.html">Durban Paws Rescue</a>
+    </div>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html" aria-current="page">Our Services</a></li>
+        <li><a href="enquiry.html">Enquire</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <h1>Our Services</h1>
+    <p>Durban Paws Rescue runs three core programmes for dogs and cats in Durban: adoption, fostering and sterilisation drives. Details on each are below, followed by a searchable list of everything we offer.</p>
+
+    <!-- Adoption programme -->
+    <section class="service">
+      <h2>Adoption</h2>
+      <img src="images/service-adoption.jpg" alt="Veterinary staff in blue scrubs checking a small brown dog in a clinic" width="736" height="920" loading="lazy">
+      <p>
+        Every animal in our care is vaccinated, sterilised, and health-checked before adoption.
+        Our adoption process includes an application form, a short home-suitability chat, and a
+        follow-up check-in two weeks after adoption to make sure the match is working well.
+      </p>
+      <ul>
+        <li>Adoption fee: from R850, which covers sterilisation, vaccinations, and deworming.</li>
+        <li>Applications reviewed within 3 working days.</li>
+        <li>Post-adoption support available for the first three months.</li>
+      </ul>
+      <p><a class="card-link" href="enquiry.html?type=adoption">Start an adoption enquiry</a></p>
+    </section>
+
+    <!-- Fostering programme -->
+    <section class="service">
+      <h2>Fostering</h2>
+      <img src="images/service-fostering.jpg" alt="A small white dog resting on a towel during a veterinary check-up" width="736" height="981" loading="lazy">
+      <p>
+        Foster carers provide short-term homes for animals recovering from illness, injury, or that
+        are too young for adoption. We supply food, bedding, and veterinary cover for the duration
+        of the foster period.
+      </p>
+      <ul>
+        <li>Foster periods typically range from 2 to 8 weeks.</li>
+        <li>Full veterinary and food support provided by the organisation.</li>
+        <li>Training and an orientation session provided before the first placement.</li>
+      </ul>
+      <p><a class="card-link" href="enquiry.html?type=fostering">Ask about fostering</a></p>
+    </section>
+
+    <!-- Sterilisation programme -->
+    <section class="service">
+      <h2>Sterilisation Drives</h2>
+      <img src="images/service-sterilisation.jpg" alt="Two vet nurses in blue scrubs sitting with a brown dog in the doorway of a mobile clinic van" width="736" height="736" loading="lazy">
+      <p>
+        We partner with local veterinary clinics to run monthly community sterilisation drives in
+        under-resourced areas around Durban, offering the procedure at no cost to pet owners who
+        qualify.
+      </p>
+      <ul>
+        <li>Held on the first Saturday of every month, location rotates by area.</li>
+        <li>Free for qualifying households; sponsored slots available for others.</li>
+        <li>Includes basic vaccinations where funding allows.</li>
+      </ul>
+      <p><a class="card-link" href="contact.html">Contact us about the next drive</a></p>
+    </section>
+
+    <!-- Searchable directory: cards are built by js/services.js from js/data.js -->
+    <section class="directory" id="directory" aria-labelledby="directory-heading">
+      <h2 id="directory-heading">Find a Service</h2>
+      <p>Search by keyword, filter by category, and sort by name, cost or availability.</p>
+
+      <div class="directory-controls" role="search">
+        <div class="form-field">
+          <label for="service-search">Search</label>
+          <input type="search" id="service-search" placeholder="Try dog, foster or free" autocomplete="off" maxlength="60">
+        </div>
+        <div class="form-field">
+          <label for="service-category">Category</label>
+          <select id="service-category">
+            <option value="all">All categories</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="service-sort">Sort by</label>
+          <select id="service-sort">
+            <option value="name-asc">Name, A to Z</option>
+            <option value="name-desc">Name, Z to A</option>
+            <option value="cost-asc">Cost, low to high</option>
+            <option value="cost-desc">Cost, high to low</option>
+            <option value="availability">Availability</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="directory-status">
+        <p id="service-count" role="status" aria-live="polite"></p>
+        <button type="button" id="service-clear" class="button-secondary" hidden>Clear search</button>
+      </div>
+
+      <ul class="directory-results" id="service-results"></ul>
+      <noscript>
+        <p>The searchable list needs JavaScript. Use the <a href="enquiry.html">enquiry form</a> or <a href="contact.html">contact us</a> to ask about any service.</p>
+      </noscript>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <p class="footer-title">Durban Paws Rescue</p>
+        <p>12 Wattle Road, Pinetown, Durban, 3610</p>
+        <p>Tel: <a href="tel:+27315550182">031&nbsp;555&nbsp;0182</a></p>
+      </div>
+      <div>
+        <p class="footer-title">Explore</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="enquiry.html">Enquire</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-title">Share this page</p>
+        <ul class="footer-links">
+          <li><a data-share="whatsapp" href="https://wa.me/?text=https%3A%2F%2Fgift031.github.io%2Fdurban-paws-rescue%2F" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+          <li><a data-share="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgift031.github.io%2Fdurban-paws-rescue%2F" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          <li><a data-share="email" href="mailto:?subject=Durban%20Paws%20Rescue">Email</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-legal">&copy; 2026 Durban Paws Rescue. All rights reserved.</p>
+  </footer>
+
+  <script src="js/config.js" defer></script>
+  <script src="js/data.js" defer></script>
+  <script src="js/services.js" defer></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>

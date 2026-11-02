@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Logic tests | Durban Paws Rescue</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 52rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; }
+    .pass { color: #1d5c2a; }
+    .fail { color: #b3261e; font-weight: bold; }
+    #summary { font-size: 1.25rem; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Logic tests</h1>
+  <p>Open this page in a browser. It runs the form rules, the enquiry replies, the date maths and the services search against the real scripts used by the site.</p>
+  <p id="summary">Running...</p>
+  <ul id="results"></ul>
+
+  <script src="../js/config.js"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/services.js"></script>
+  <script src="../js/forms.js"></script>
+  <script src="logic-tests.js"></script>
+</body>
+</html>

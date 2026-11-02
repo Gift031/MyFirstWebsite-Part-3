@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https://www.google.com; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Adoption, Foster and Volunteer Enquiry | Durban Paws Rescue</title>
+  <meta name="description" content="Ask about adopting a dog or cat, fostering, volunteering or sponsoring an animal in Durban. Get the fee and availability straight away.">
+  <meta name="theme-color" content="#1b6b73">
+  <link rel="canonical" href="https://gift031.github.io/durban-paws-rescue/enquiry.html">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph and Twitter cards control how a shared link looks -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Durban Paws Rescue">
+  <meta property="og:locale" content="en_ZA">
+  <meta property="og:title" content="Adoption, Foster and Volunteer Enquiry | Durban Paws Rescue">
+  <meta property="og:description" content="Ask about adopting a dog or cat, fostering, volunteering or sponsoring an animal in Durban. Get the fee and availability straight away.">
+  <meta property="og:url" content="https://gift031.github.io/durban-paws-rescue/enquiry.html">
+  <meta property="og:image" content="https://gift031.github.io/durban-paws-rescue/images/service-adoption.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;family=Poppins:wght@600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="enquiry-page-background">
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header>
+    <div class="logo">
+      <a href="index.html">Durban Paws Rescue</a>
+    </div>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="enquiry.html" aria-current="page">Enquire</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="enquiry-page" id="main-content">
+
+    <section class="enquiry-intro" aria-labelledby="enquiry-heading">
+      <p class="eyebrow">Take the next step</p>
+      <h1 id="enquiry-heading">Make an Enquiry</h1>
+      <p>
+        Interested in adopting a dog or cat, fostering, volunteering, or becoming a sponsor? Fill in the form
+        below and you will see the cost and availability straight away. A member of our team will
+        follow up within 3 working days.
+      </p>
+    </section>
+
+    <!-- The action attribute is where the form data is sent. Replace the Formspree ID with your own (see README). -->
+    <form action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID" method="post" id="enquiry-form" aria-describedby="form-note">
+      <p class="form-note" id="form-note"><span aria-hidden="true">*</span> Required fields</p>
+
+      <div class="form-field">
+        <label for="full-name">Full Name <span aria-hidden="true">*</span></label>
+        <input type="text" id="full-name" name="full-name" autocomplete="name" minlength="2" maxlength="60" required data-rule="name" aria-describedby="full-name-error">
+        <span class="field-error" id="full-name-error"></span>
+      </div>
+
+      <div class="form-field">
+        <label for="email">Email Address <span aria-hidden="true">*</span></label>
+        <input type="email" id="email" name="email" autocomplete="email" maxlength="254" required data-rule="email" aria-describedby="email-error">
+        <span class="field-error" id="email-error"></span>
+      </div>
+
+      <div class="form-field">
+        <label for="phone">Phone Number <span class="optional">(optional)</span></label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" pattern="[0-9+\(\)\s\-]{9,17}" title="A South African number, for example 031 555 0182" data-rule="phone" aria-describedby="phone-hint phone-error">
+        <span class="field-hint" id="phone-hint">A South African number, for example 031 555 0182.</span>
+        <span class="field-error" id="phone-error"></span>
+      </div>
+
+      <div class="form-field">
+        <label for="enquiry-type">I am enquiring about <span aria-hidden="true">*</span></label>
+        <select id="enquiry-type" name="enquiry-type" required data-rule="select" data-error="Choose what you are enquiring about." aria-describedby="enquiry-type-error">
+          <option value="">Please select an option</option>
+          <option value="adoption">Adoption</option>
+          <option value="fostering">Fostering</option>
+          <option value="volunteering">Volunteering</option>
+          <option value="sponsorship">Becoming a Sponsor</option>
+          <option value="other">Other</option>
+        </select>
+        <span class="field-error" id="enquiry-type-error"></span>
+      </div>
+
+      <!-- Extra questions: js/forms.js shows the group that matches the enquiry type -->
+      <div class="form-field" data-show-for="adoption" hidden>
+        <label for="animal">Which animal would you like to adopt? <span aria-hidden="true">*</span></label>
+        <select id="animal" name="animal" data-rule="select" data-required data-error="Choose a dog or a cat." aria-describedby="animal-error" disabled>
+          <option value="">Please select an option</option>
+          <option value="dog">Dog or puppy</option>
+          <option value="cat">Cat or kitten</option>
+        </select>
+        <span class="field-error" id="animal-error"></span>
+      </div>
+
+      <div class="form-field" data-show-for="adoption" hidden>
+        <label for="visit-date">Preferred visit date <span class="optional">(optional)</span></label>
+        <input type="date" id="visit-date" name="visit-date" data-rule="date" aria-describedby="visit-date-hint visit-date-error" disabled>
+        <span class="field-hint" id="visit-date-hint">The shelter is open Monday to Saturday. Pick a day within the next 60 days.</span>
+        <span class="field-error" id="visit-date-error"></span>
+      </div>
+
+      <div class="form-field" data-show-for="fostering" hidden>
+        <label for="foster-animal">Which animals could you foster? <span aria-hidden="true">*</span></label>
+        <select id="foster-animal" name="foster-animal" data-rule="select" data-required data-error="Choose which animals you could foster." aria-describedby="foster-animal-error" disabled>
+          <option value="">Please select an option</option>
+          <option value="dogs">Dogs</option>
+          <option value="cats">Cats</option>
+          <option value="kittens">Kittens</option>
+          <option value="any">Any animal</option>
+        </select>
+        <span class="field-error" id="foster-animal-error"></span>
+      </div>
+
+      <div class="form-field" data-show-for="fostering" hidden>
+        <label for="foster-length">How long could you foster? <span aria-hidden="true">*</span></label>
+        <select id="foster-length" name="foster-length" data-rule="select" data-required data-error="Choose how long you could foster." aria-describedby="foster-length-error" disabled>
+          <option value="">Please select an option</option>
+          <option value="short">2 to 4 weeks</option>
+          <option value="long">5 to 8 weeks</option>
+        </select>
+        <span class="field-error" id="foster-length-error"></span>
+      </div>
+
+      <div class="form-field" data-show-for="volunteering" hidden>
+        <label for="volunteer-days">When can you volunteer? <span aria-hidden="true">*</span></label>
+        <select id="volunteer-days" name="volunteer-days" data-rule="select" data-required data-error="Choose when you can volunteer." aria-describedby="volunteer-days-error" disabled>
+          <option value="">Please select an option</option>
+          <option value="weekdays">Weekdays</option>
+          <option value="weekends">Weekends</option>
+          <option value="either">Weekdays or weekends</option>
+        </select>
+        <span class="field-error" id="volunteer-days-error"></span>
+      </div>
+
+      <div class="form-field" data-show-for="sponsorship" hidden>
+        <label for="sponsor-tier">Sponsorship level <span aria-hidden="true">*</span></label>
+        <select id="sponsor-tier" name="sponsor-tier" data-rule="select" data-required data-error="Choose a sponsorship level." aria-describedby="sponsor-tier-error" disabled>
+          <option value="">Please select an option</option>
+          <option value="bronze">Bronze, R150 a month</option>
+          <option value="silver">Silver, R350 a month</option>
+          <option value="gold">Gold, R750 a month</option>
+        </select>
+        <span class="field-error" id="sponsor-tier-error"></span>
+      </div>
+
+      <div class="form-field">
+        <label for="message">Message <span aria-hidden="true">*</span></label>
+        <textarea id="message" name="message" rows="5" minlength="10" maxlength="1000" required data-rule="message" aria-describedby="message-count message-error"></textarea>
+        <span class="char-count" id="message-count" aria-hidden="true"></span>
+        <span class="field-error" id="message-error"></span>
+      </div>
+
+      <button type="submit">Send my enquiry</button>
+      <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+
+    </form>
+
+    <!-- Reply shown after a valid submission (built by js/forms.js) -->
+    <section class="response-panel" id="enquiry-response" aria-live="polite" hidden></section>
+
+    <!-- Frequently asked questions: an accordion, see js/script.js -->
+    <section class="faq" aria-labelledby="faq-heading">
+      <h2 id="faq-heading">Before You Enquire</h2>
+      <div class="accordion" data-accordion data-single>
+        <h3>
+          <button type="button" class="accordion-trigger" id="faq-t1" aria-expanded="false" aria-controls="faq-p1">How long does an adoption application take?</button>
+        </h3>
+        <section class="accordion-panel" id="faq-p1" aria-labelledby="faq-t1">
+          <div class="accordion-panel-inner">
+            <p>We review applications within 3 working days, then arrange a short home-suitability chat. Two weeks after your animal goes home, we check in to see how it is settling.</p>
+          </div>
+        </section>
+
+        <h3>
+          <button type="button" class="accordion-trigger" id="faq-t2" aria-expanded="false" aria-controls="faq-p2">What does the adoption fee cover?</button>
+        </h3>
+        <section class="accordion-panel" id="faq-p2" aria-labelledby="faq-t2">
+          <div class="accordion-panel-inner">
+            <p>The fee covers sterilisation, vaccinations and deworming. Dogs cost from R1,100 and cats from R850.</p>
+          </div>
+        </section>
+
+        <h3>
+          <button type="button" class="accordion-trigger" id="faq-t3" aria-expanded="false" aria-controls="faq-p3">Do I need experience to foster?</button>
+        </h3>
+        <section class="accordion-panel" id="faq-p3" aria-labelledby="faq-t3">
+          <div class="accordion-panel-inner">
+            <p>No. We train you before your first placement and supply food, bedding and veterinary cover. Most foster stays last 2 to 8 weeks.</p>
+          </div>
+        </section>
+
+        <h3>
+          <button type="button" class="accordion-trigger" id="faq-t4" aria-expanded="false" aria-controls="faq-p4">Can I volunteer if I am only free on weekends?</button>
+        </h3>
+        <section class="accordion-panel" id="faq-p4" aria-labelledby="faq-t4">
+          <div class="accordion-panel-inner">
+            <p>Yes. Weekend and weekday shifts run all year. Choose the days that suit you when you fill in the form.</p>
+          </div>
+        </section>
+
+        <h3>
+          <button type="button" class="accordion-trigger" id="faq-t5" aria-expanded="false" aria-controls="faq-p5">When is the next volunteer orientation?</button>
+        </h3>
+        <section class="accordion-panel" id="faq-p5" aria-labelledby="faq-t5">
+          <div class="accordion-panel-inner">
+            <p>Orientation runs on the second Saturday of every month. The next one is on <strong data-next-orientation>the second Saturday of this month</strong> at 09:00 at the Pinetown shelter.</p>
+          </div>
+        </section>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <p class="footer-title">Durban Paws Rescue</p>
+        <p>12 Wattle Road, Pinetown, Durban, 3610</p>
+        <p>Tel: <a href="tel:+27315550182">031&nbsp;555&nbsp;0182</a></p>
+      </div>
+      <div>
+        <p class="footer-title">Explore</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="enquiry.html">Enquire</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-title">Share this page</p>
+        <ul class="footer-links">
+          <li><a data-share="whatsapp" href="https://wa.me/?text=https%3A%2F%2Fgift031.github.io%2Fdurban-paws-rescue%2F" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+          <li><a data-share="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgift031.github.io%2Fdurban-paws-rescue%2F" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          <li><a data-share="email" href="mailto:?subject=Durban%20Paws%20Rescue">Email</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-legal">&copy; 2026 Durban Paws Rescue. All rights reserved.</p>
+  </footer>
+
+  <script src="js/config.js" defer></script>
+  <script src="js/data.js" defer></script>
+  <script src="js/forms.js" defer></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>
